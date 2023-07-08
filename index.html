@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="faq">
+			<h2>O que é IMC?</h2>
+			<p>IMC é a sigla para Índice de Massa Corpórea
+				parâmetro adotado pela Organização Mundial
+				de Saúde para calcular o peso ideal de cada pessoa.</p>
+			<h2>Como IMC é calculado?</h2>
+			<p>O índice é calculado da seguinte maneira: divide-se
+				o peso do paciente pela sua altura elevada ao quadrado.
+				Diz-se que o indivíduo tem peso normal quando o
+				resultado do IMC está entre 18,5 e 24,9.</p>
+			<h2>Quer saber seu IMC?</h2>
+			<p>Basta preencher o formulário ao lado e em
+				alguns instantes você receberá seu resultado.</p>
+		</div>
+		<div class="form">
+			<h1>Cálculo de IMC</h1>
+			<!-- return false para evitar q a pag recarregue      -->
+			<form action="" onsubmit="return false">
+				<label for="altura">Altura <span class="ex">(ex: 1,95) </span></label>
+				<input type="text" id="altura"><br>
+				<label for="Peso">Peso <span class="ex">(ex: 95,5) </span></label>
+				<input type="text" id="peso">
+				<br>
+
+				<!--type submit ao invés de button para q possa ser enviado com tecla Enter-->
+				<input type="submit" value="Calcular" onclick="teste()">
+
+				<!-- resultado divido em 2 spans para q haja quebra de linha-->
+				<span class="resultado"></span>
+
+				<span class="resultado2"></span>
+
+			</form>
+
+
+
+		</div>
+
+
+
+
+
+
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

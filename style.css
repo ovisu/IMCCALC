@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0px;
+  font-weight: normal;
+}
+body {
+  background-color: #000823;
+  font-family: Poppins;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #ececec;
+
+  width: 750px;
+  height: 450px;
+
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 15px;
+
+  border-radius: 10px;
+}
+.faq {
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+  margin-top: 30px;
+}
+.faq h2 {
+  font-size: 1.5rem;
+  position: relative;
+  margin-top: 30px;
+}
+.faq h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: blue;
+  border-radius: 5px;
+  left: -20px;
+  top: 12px;
+  width: 10px;
+  height: 10px;
+}
+.faq p {
+  font-size: 0.75rem;
+  color: #526566;
+}
+
+.form {
+  margin-top: 0px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  border-radius: 20px 10px 10px 20px;
+  background-color: #dbe1fc;
+}
+.ex {
+  font-size: 0.825rem;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.form input {
+  border: 1px solid #0029ff;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.form input:focus {
+  outline: none !important;
+  border: 1px solid #121638;
+}
+.form input[type="submit"] {
+  align-self: flex-start;
+  font-family: Poppins;
+  font-size: 1rem;
+  color: white;
+  background-color: #0029ff;
+  font-weight: 300;
+}
+.form h1 {
+  font-size: 2rem;
+  color: #0029ff;
+  white-space: nowrap;
+  margin-top: 50px;
+}
+
+.resultado {
+  font-size: 1rem;
+  color: #0029ff;
+  margin-top: 30px;
+}
+.resultado2 {
+  font-size: 1rem;
+  color: #0029ff;
+}
